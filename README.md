@@ -214,8 +214,9 @@ volumes:
 ```
 
  Run the setup command on the backend container
-  - go inside the container 
+  - go inside the container before need to build the docker compose
    ```
+    docker-compose up --build -d
     docker exec -it articles-backend_laravel.test_1  bash
    ```
   - run this 
